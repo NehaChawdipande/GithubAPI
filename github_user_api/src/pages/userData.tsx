@@ -7,7 +7,6 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function UserData(props) {
   const userDetails = props.props;
-  console.log(userDetails);
   return (
     <>
       <div className={styles1.userDataContainer}>

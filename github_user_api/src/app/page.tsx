@@ -18,7 +18,6 @@ export default function Home() {
       );
       const data = await res.json();
       setUserList(data.items);
-      console.log(data.items);
     };
     fetchData();
   }, []);
@@ -26,7 +25,6 @@ export default function Home() {
   const loadUserDetails = async (user) => {
     const res = await fetch(`https://api.github.com/users/${user.login}`);
     const data = await res.json();
-    console.log(data);
     setSelectedUserDetails(data);
     setSelectedUser(true);
   };
@@ -76,8 +74,6 @@ export default function Home() {
             {userList.map((user) => {
               return (
                 <div
-                  // href="/userData"
-                  // target="_self"
                   key={user.login}
                   className={styles.card}
                 >

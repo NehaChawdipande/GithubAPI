@@ -20,9 +20,7 @@ export default function FindUser() {
     e.preventDefault();
     const res = await fetch(`https://api.github.com/users/${formData.name}`);
     const data = await res.json();
-    console.log(data);
     setUserDetails(data);
-    console.log(userDetails);
   };
 
   const handleInput = (e) => {
