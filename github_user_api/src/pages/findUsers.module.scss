@@ -1,0 +1,32 @@
+  .userDataContainer {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    transform: translateZ(100px);
+    font-family: var(--font-mono);
+  }
+
+  .redirect {
+    text-align: center;
+    border: solid 1px grey;
+    background-color: whitesmoke;
+    padding: 12px;
+    margin: 20px 10px 10px;
+    font-size: small;
+    border-radius: 2rem;
+    color: #343434;
+    transform: translateZ(100px);
+    font-family: var(--font-mono);
+  }
+
+  .submit {
+    text-align: center;
+    font-size: small;
+    border: solid 1px grey;
+    background-color: #343434;
+    padding: 12px;
+    margin: 20px 10px 10px;
+    color: white;
+    transform: translateZ(100px);
+    font-family: var(--font-mono);
+  }

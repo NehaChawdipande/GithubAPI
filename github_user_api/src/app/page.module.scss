@@ -55,7 +55,8 @@
   transition: background 200ms, border 200ms;
 }
 .userItem {
-  @extend .card;
+  padding: 0;
+  margin: 1rem 1.2rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -63,14 +64,15 @@
 .userList {
   list-style: none;
   text-transform: capitalize;
+  transform: translateZ(10px);
   @extend .grid;
   margin-top: 20px;
-  width: 50vw;
+  width: 64vw;
 }
 .input {
   margin: 1rem;
   height: 48px;
-  width: 25vw;
+  width: 50vw;
   padding-left: 12px;
   /* padding: 1rem 1.2rem; */
   border-radius: var(--border-radius);
@@ -82,7 +84,7 @@
 .submit{
   margin: 1rem;
   height: 48px;
-  width: 25vw;
+  width: 50vw;
 }
 .card span {
   display: inline-block;
@@ -143,6 +145,7 @@
 
 .logo {
   position: relative;
+  margin-bottom: 2rem;
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -186,7 +189,7 @@
   }
 
   .center {
-    padding: 0 0 6rem;
+    padding: 0 0 2rem;
   }
 
   .center::before {
