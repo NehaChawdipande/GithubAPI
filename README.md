@@ -1,5 +1,5 @@
 # GithubAPI
-React Project using Github User API and "creat-next-app"
+Project using Github User API and "creat-next-app"
 
 To start the application: 
 1. cd github-user-api
